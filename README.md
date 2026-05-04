@@ -82,7 +82,7 @@ Elevate Trend is a Django-based social media monitoring tool developed as a fina
 
 * Duration: 6 months
 * Type: Group Project
-* Domain: Social Media Analytics / Big Data
+* Domain: Social Media Analytics
 
 ---
 
