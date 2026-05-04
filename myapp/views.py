@@ -2032,6 +2032,7 @@ def get_page_postanalysis_view(request):
             return JsonResponse({'error': 'Page access token not found.'}, status=400)
           # Fetch all posts for the selected page using pagination
         posts_with_insights = []
+        request.session['facebook_page_token'] = page_access_token
         fields = "id,message,created_time,attachments{media_type,media,subattachments}"
         posts_url = f"https://graph.facebook.com/v21.0/{page_id}/feed?fields={fields}&access_token={page_access_token}"
         while posts_url:
